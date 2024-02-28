@@ -1,0 +1,16 @@
+{
+  "itens": [
+    {
+      "id": 1,
+      "produto": "caixa de papelao",
+      "descricao": "caixa utilizada para transporte de materiais",
+      "quantidade": 5
+    },
+    {
+      "id": 2,
+      "produto": "plastico bolha",
+      "descricao": "material para acondicionar com segurança itens durante o transporte",
+      "quantidade": 6
+    }
+  ]
+}
