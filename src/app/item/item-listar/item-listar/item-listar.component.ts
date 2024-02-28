@@ -12,6 +12,8 @@ export class ItemListarComponent implements OnInit {
 
   itens$!: Observable<Item[]>;
 
+  colunasTabela = ['id', 'produto', 'quantidade', 'descricao'];
+
   constructor(private itemService: ItemService) {  }
 
   ngOnInit(){
