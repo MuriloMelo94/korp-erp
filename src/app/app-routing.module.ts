@@ -8,8 +8,8 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: "estoque",
-    loadChildren: () => import('./estoque/estoque-listar/estoque-listar.module').then(modulo => modulo.EstoqueListarModule)
+    path: "itens",
+    loadChildren: () => import('./item/item-listar/item-listar.module').then(modulo => modulo.ItemListarModule)
   }
 ];
 

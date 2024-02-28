@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { EstoqueListarRoutingModule } from './estoque-listar-routing.module';
+import { ItemListarRoutingModule } from './item-listar-routing.module';
 import { ItemListarComponent } from './item-listar/item-listar.component';
 
 
@@ -11,7 +11,7 @@ import { ItemListarComponent } from './item-listar/item-listar.component';
   ],
   imports: [
     CommonModule,
-    EstoqueListarRoutingModule
+    ItemListarRoutingModule
   ]
 })
-export class EstoqueListarModule { }
+export class ItemListarModule { }
