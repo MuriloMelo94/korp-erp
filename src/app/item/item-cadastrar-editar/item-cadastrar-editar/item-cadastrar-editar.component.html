@@ -1,0 +1,23 @@
+<mat-toolbar>Cadastrar Item</mat-toolbar>
+
+<div class="componente-container">
+  <form class="form-padrao" *ngIf="formGroup" [formGroup]="formGroup" (ngSubmit)="formGroup.valid && salvar()" novalidate>
+    <mat-form-field>
+      <mat-label>Produto</mat-label>
+      <input matInput placeholder="produto" formControlName="produto" required autocomplete="off">
+      <mat-error>Obrigatório nome do produto com ao menos duas letras.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Quantidade</mat-label>
+      <input matInput placeholder="quantidade" formControlName="quantidade" type="number" autocomplete="off">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Descrição</mat-label>
+      <textarea matInput placeholder="Descrição do produto" formControlName="descricao" autocomplete="off"></textarea>
+    </mat-form-field>
+    <div class="linha-botoes">
+      <button mat-raised-button color="primary" [disabled]="!formGroup.valid">Salvar</button>
+      <button mat-raised-button type="button" routerLink="/itens">Cancelar</button>
+    </div>
+  </form>
+</div>
