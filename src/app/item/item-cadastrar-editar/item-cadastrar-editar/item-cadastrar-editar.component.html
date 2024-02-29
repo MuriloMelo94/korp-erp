@@ -1,7 +1,8 @@
-<mat-toolbar>Cadastrar Item</mat-toolbar>
+<mat-toolbar>{{(item && item.id) ? 'Editar item' : 'Cadastrar item'}}</mat-toolbar>
 
 <div class="componente-container">
   <form class="form-padrao" *ngIf="formGroup" [formGroup]="formGroup" (ngSubmit)="formGroup.valid && salvar()" novalidate>
+    <input type="hidden" name="id" *ngIf="!item.id" value="300">
     <mat-form-field>
       <mat-label>Produto</mat-label>
       <input matInput placeholder="produto" formControlName="produto" required autocomplete="off">
@@ -18,6 +19,7 @@
     <div class="linha-botoes">
       <button mat-raised-button color="primary" [disabled]="!formGroup.valid">Salvar</button>
       <button mat-raised-button type="button" routerLink="/itens">Cancelar</button>
+      <button *ngIf="item && item.id" mat-raised-button color="warn" (click)="deletar()"><mat-icon>delete</mat-icon>Deletar</button>
     </div>
   </form>
 </div>

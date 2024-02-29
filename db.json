@@ -1,34 +1,16 @@
 {
   "itens": [
     {
-      "id": "1",
-      "produto": "caixa de papelao",
-      "descricao": "caixa utilizada para transporte de materiais",
-      "quantidade": 5
+      "id": "9e3f",
+      "produto": "Caixa de papelão",
+      "quantidade": 10,
+      "descricao": "caixa para organizar coisas"
     },
     {
-      "id": "2",
-      "produto": "plastico bolha",
-      "descricao": "material para acondicionar com segurança itens durante o transporte",
-      "quantidade": 6
-    },
-    {
-      "id": "3",
-      "produto": "Tesoura sem ponta",
-      "quantidade": 2,
-      "descricao": "Tesoura para crianças, sem ponta."
-    },
-    {
-      "id": "4",
-      "produto": "Novo produto",
-      "quantidade": 30,
-      "descricao": "Novo produto teste"
-    },
-    {
-      "id": "56c4",
-      "produto": "Vassoura",
-      "quantidade": 2,
-      "descricao": "Vassoura de casa"
+      "id": "9b44",
+      "produto": "Plástico bolha",
+      "quantidade": 5,
+      "descricao": "para proteger utensilios"
     }
   ]
 }
