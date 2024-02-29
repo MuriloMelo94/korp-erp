@@ -1,27 +1,70 @@
 # KorpErp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+O projeto foi desenvolvido como etapa obrigatória para a entrevista da vaga de Estágio de Desenvolvedor(a) Web Fullstack ( C# e Angular) da Viasoft Korp
 
-## Development server
+O projeto foi gerado com:
+
+* [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+* [Node v20.11.1](https://nodejs.org/en) version v20.11.1.
+* [JSON-serve](https://github.com/typicode/json-server) version 0.1.0.
+
+## Configurando o servidor JSON-serv (fake API)
+
+Foi o utilizado o JSON-serve como api de dados para otimizar o uso do tempo no desafio. Para configurar esse serviço, você já deve ter instalado o Node (links na lista acima).
+
+Abra um terminal (Ex.: GitBash)
+
+Instale o json-server, através do comando:
+
+`npm install -g json-server`
+
+Os dados da fake API do JSON-serve estarão no arquivo `db.json`, localizado na raiz desse projeto. Os dados do arquivo possuem a seguinte estrutura de exemplo: 
+
+ ```json
+ {  
+ 	"itens":[  
+ 	{
+      "id": "9e3f",
+      "produto": "Caixa de papelão",
+      "quantidade": 10,
+      "descricao": "caixa para organizar coisas"
+    },
+    {
+      "id": "9b44",
+      "produto": "Plástico bolha",
+      "quantidade": 5,
+      "descricao": "para proteger utensilios"
+    }
+ 	]
+ }
+ ```
+
+Volte para o terminal e rode o comando:
+
+`json-server --watch db.json`
+
+O JSON-serve utilizará, por default, o caminho  http://localhost:3000 para fornecer os dados. Caso a porta esteja ocupada, uma outra será fornecida e, somente nesse último caso, atualize as informações da variável _'baseURL'_ localizada no arquivo `src/app/item/item.service.ts`.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalando e rodando o projeto Angular
 
-## Build
+### Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para buildar o projeto, rode o comando `ng build` no seu terminal.
 
-## Running unit tests
+### Servidor do Angular
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Finalmente, rode o comando `ng serve` para levantar o servidor do Angular com nossa aplicação. Navegue até http://localhost:4200/ para utilizar o sistema. Caso a porta `4200` esteja ocupada, haverá um aviso no seu terminal.
 
-## Running end-to-end tests
+## Ideias e melhorias futuras
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* Integração com API Rest em C#
+* Melhoria no módulo de estoque com categoria de produto
+* Paginação de itens no estoque
+* Módulo de vendas (alterando o estoque automaticamente)
+* Módulo de cadastro de clientes e fornecedores
+* Módulo de gerenciamento financeiro (receitas, despesas e previsões)
+* Módulo de integração com correios e sistemas logísticos
+* Aprimoramentos visuais, etc
