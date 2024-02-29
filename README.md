@@ -45,8 +45,6 @@ Volte para o terminal e rode o comando:
 
 O JSON-serve utilizará, por default, o caminho  http://localhost:3000 para fornecer os dados. Caso a porta esteja ocupada, uma outra será fornecida e, somente nesse último caso, atualize as informações da variável _'baseURL'_ localizada no arquivo `src/app/item/item.service.ts`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
 
 ## Instalando e rodando o projeto Angular
 
@@ -56,7 +54,7 @@ Para buildar o projeto, rode o comando `ng build` no seu terminal.
 
 ### Servidor do Angular
 
-Finalmente, rode o comando `ng serve` para levantar o servidor do Angular com nossa aplicação. Navegue até http://localhost:4200/ para utilizar o sistema. Caso a porta `4200` esteja ocupada, haverá um aviso no seu terminal.
+Finalmente, abra um novo terminal e rode o comando `ng serve` para levantar o servidor do Angular com nossa aplicação. Navegue até http://localhost:4200/ para utilizar o sistema. Caso a porta `4200` esteja ocupada, haverá um aviso no seu terminal.
 
 ## Ideias e melhorias futuras
 
